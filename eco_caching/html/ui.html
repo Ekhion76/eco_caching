@@ -1,0 +1,280 @@
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<!-- PAGES -->
+<div class="pageWrapper">
+
+    <!-- header -->
+    <div class="header">
+        <h1>ECO CACHING</h1>
+        <a href="#" class="btnClose btn3">Bezár</a>
+    </div>
+
+    <!-- title -->
+    <div class="titleContainer">
+        <div class="headInformation"></div>
+        <h1 class="title"></h1>
+        <span class="description"></span>
+    </div>
+
+    <!-- content -->
+    <div id="page"></div>
+</div>
+
+<div class="controlContainer template">
+
+    <div class="cHeader">
+        <h2 class="itemHeader">GEO CONTROL</h2>
+    </div>
+
+    <div class="controlContent">
+
+        <div class="cBlock">
+
+            <p>Standard: <span class="sStatus"></span> Lejárat: <span class="sExpire"></span></p>
+
+            <form action="" name="standardForm" id="standardForm">
+
+                <label>
+                    <span class="zoneLabel">1. Útvonal 1 (0-4) (piros)</span>
+                    <input type="number" id="zone_1" name="zone_1" min="0" max="4">
+                </label>
+
+                <label>
+                    <span class="zoneLabel">2. Útvonal 2 (0-4) (kék)</span>
+                    <input type="number" id="zone_2" name="zone_2" min="0" max="4">
+                </label>
+
+                <label>
+                    <span class="zoneLabel">3. Útvonal 3 (0-4) (narancs)</span>
+                    <input type="number" id="zone_3" name="zone_3" min="0" max="4">
+                </label>
+
+                <label>
+                    <span class="zoneLabel">4. Útvonal 4 (0-4) (lila)</span>
+                    <input type="number" id="zone_4" name="zone_4" min="0" max="4">
+                </label>
+
+                <label>
+                    <span class="zoneLabel">5. Útvonal 5 (0-4) (zöld)</span>
+                    <input type="number" id="zone_5" name="zone_5" min="0" max="4">
+                </label>
+
+                <label>
+                    <span class="zoneLabel">6. Útvonal 6 (0-4) (sárga)</span>
+                    <input type="number" id="zone_6" name="zone_6" min="0" max="4">
+                </label>
+
+                <input type="button" name="sStop" id="sStop" class="btn3" value="STOP">
+                <input type="button" name="sStart" id="sStart" class="btn" value="START">
+            </form>
+        </div>
+
+        <div class="cBlock">
+
+            <p>Event: <span class="eStatus"></span> Lejárat: <span class="eExpire"></span></p>
+
+            <form action="" name="eventForm">
+
+                <label>
+                    <span class="zoneLabel">Event hossza:</span>
+                    <select class="eInterval" id="eInterval">
+                        <option value="2">2 óra</option>
+                        <option value="3">3 óra</option>
+                        <option value="4">4 óra</option>
+                    </select>
+                </label>
+
+                <input type="button" name="eStop" id="eStop" class="btn btn3" value="STOP">
+                <input type="button" name="eStart" id="eStart" class="btn btn" value="START">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="statisticsContainer template">
+
+    <div class="cHeader">
+        <h2 class="itemHeader">Statisztika</h2>
+    </div>
+
+    <ul class="statisticsMenu">
+        <li id="myStatisticsBtn" class="btn4">Saját statisztika</li>
+        <li id="summaryStatisticsBtn" class="btn4">Összesített lista</li>
+        <li id="ranksBtn" class="btn4">Rangok</li>
+    </ul>
+
+    <div class="statisticsContent"></div>
+</div>
+
+<div class="summaryStatistics template">
+    <div class="summaryStatisticsItemContainer">
+
+        <!-- ORDER BY MENU -->
+        <form class="orderByForm" name="orderByForm">
+
+            <select class="statisticsOrderByMenu" onChange="orderBy(this)" disabled>
+                <option value="firstname">Név</option>
+                <option value="opened">Helyek</option>
+                <option value="hit">Ládák</option>
+            </select>
+        </form>
+
+        <div class="summaryStatisticsItem template">
+
+            <div class="statisticsItemMain">
+
+                <div class="summaryStatValueName"></div>
+                <div class="summaryStatValueTitleLabel"></div>
+                <div class="summaryStatValueRankLabel"></div>
+
+                <div class="statisticsItemMainRight space-between">
+
+                    <div class="summaryStatValueOpened"></div>
+                    <div class="summaryStatValueHit"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="myStatistics template">
+
+    <ul class="stUl1">
+        <li>
+            <span class="sPoint statValueBig"></span>
+            <span class="statDesc paddingDesc">
+                    <span>Geopont</span><br/>Beváltható fizetőeszköz
+            </span>
+        </li>
+        <li>
+            <span class="sCoin statValueBig"></span>
+            <span class="statDesc paddingDesc">
+                    <span>Érme</span><br/>Beváltható fizetőeszköz
+            </span>
+        </li>
+    </ul>
+
+
+    <ul class="stUl2">
+        <li>
+            <span class="material-icons statIcon">place</span>
+            <span>
+                    <span class="sOpened statValue"></span>
+                    <span class="statDesc">Feltárt hely</span>
+            </span>
+        </li>
+        <li>
+            <span class="material-icons statIcon">business_center</span>
+            <span>
+                    <span class="sHit statValue"></span>
+                    <span class="statDesc">Láda</span>
+            </span>
+        </li>
+    </ul>
+
+</div>
+
+<div class="rankList template">
+
+    <h3 style="text-align: center">Az alábbi táblázatok tartalmazzák azokat az értékhatárokat, amiket adott ranghoz /
+        címhez teljesíteni szükséges.</h3>
+    <div class="tableContainer space-evenly"></div>
+</div>
+
+<div class="shopContainer template">
+
+    <div class="cHeader">
+
+        <div class="balanceContainer">
+
+            <ul class="balance">
+                <li><span class="gPrefix material-icons">circle</span>PONT: <span class="point"></span></li>
+                <li><span class="gPrefix material-icons">stars</span>ÉRME: <span class="coin"></span></li>
+            </ul>
+        </div>
+
+        <h2 class="itemHeader">GEO SHOP</h2>
+    </div>
+
+    <div class="shopContent"></div>
+</div>
+
+<div class="shop template">
+    <div class="shopItemContainer">
+
+        <div class="shopItem template">
+
+            <div class="siImg"></div>
+            <div class="siLabel"></div>
+            <div class="siPrice"></div>
+
+            <div class="siAmount">
+                <span class="siMinus">-</span>
+                <span class="siPiece">1</span>
+                <span class="siPlus">+</span>
+            </div>
+
+            <div class="siBuyBtn">Vásárlás</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- HUD -->
+<div id="hudWrapper">
+    <div id="statusWrapper"></div>
+    <div id="actionWrapper"></div>
+    <div id="generalWrapper"></div>
+</div>
+
+<div class="hud template">
+
+    <div class="displayBar">
+
+        <ul class="infoBar">
+
+            <li><span class="gPrefix material-icons">place</span>HELY: <span class="opened"></span></li>
+            <li><span class="gPrefix material-icons">business_center</span>LÁDA: <span class="hit"></span></li>
+            <li><span class="gPrefix material-icons">circle</span>PONT: <span class="point"></span></li>
+            <li><span class="gPrefix material-icons">stars</span>ÉRME: <span class="coin"></span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="actionInformation template">
+    <span class='msgActionTitle block'></span>
+    <span class='msgDescription block'></span>
+    <span class='msgActionMsg block'></span>
+</div>
+
+<div id="rewardPopup">
+
+    <p class="popupTitle"></p>
+    <p class="popupCongratulation">
+        <span class="hl"><span class="popupPlacement">1</span>. HELYEZETT</span>
+        lettél
+    </p>
+    <img class="popupImg" src="" alt="">
+    <p class="popupText"></p>
+
+    <ul class="rewardBalance">
+        <li><span class="gPrefix material-icons">category</span><span class="popupItem"></span></li>
+        <li><span class="gPrefix material-icons">attach_money</span><span class="popupMoney"></span></li>
+        <li><span class="gPrefix material-icons">circle</span><span class="popupPoint"></span></li>
+        <li><span class="gPrefix material-icons">stars</span><span class="popupCoin"></span></li>
+    </ul>
+</div>
+
+<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+<script src="js/helper.js" type="text/javascript"></script>
+<script src="js/hud.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+</body>
