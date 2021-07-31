@@ -29,5 +29,7 @@ Működés:
 
 [Képek](https://github.com/Ekhion76/eco_caching/tree/main/eco_caching/preview_images)
 
-![ecocaching](https://github.com/Ekhion76/eco_caching/blob/main/eco_caching/preview_images/eco_caching_reward.jpg)
+
+![ecocaching_hit](https://github.com/Ekhion76/eco_caching/blob/main/eco_caching/preview_images/eco_caching_hit.jpg)
+![ecocaching_reward](https://github.com/Ekhion76/eco_caching/blob/main/eco_caching/preview_images/eco_caching_reward.jpg)
 
