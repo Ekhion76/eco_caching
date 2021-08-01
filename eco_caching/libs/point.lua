@@ -198,8 +198,7 @@ function resetSessionData(sid)
     if sid == 2 then ECO.STATS.event = 0 end
 end
 
--- not IsPedAPlayer( ped ) then set standard anim?
--- vagy ha a ped ojjektumhoz van standard anim set
+
 function animPlay(ped, dict, anim, duration)
 
     if not ped or type(ped) ~= 'number' or ECO.inAnim[ped] then return end
