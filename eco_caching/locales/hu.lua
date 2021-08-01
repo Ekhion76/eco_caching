@@ -26,7 +26,7 @@ Locales['hu'] = {
 
     ['geo_action'] = 'Üdvözlet túrázó!',
     ['geo_stop_description'] = 'Végeztél mára? Remélem jól szórakoztál. <br>Nézz be a Geo Shop-ba, biztos találsz valami neked kedves dolgot!',
-    ['geo_start_description'] = 'Most melyik útvonalat választod? <br>Járd be mindet, hogy megtaláld a kicset! <br>Minden felkeresett helyen kapsz egy levásárolható pontot és esélyt, hogy értékes tárgyat találj! <br>Jó szerencsét!',
+    ['geo_start_description'] = 'Most melyik útvonalat választod? <br>Járd be mindet, hogy megtaláld a kincset! <br>Minden felkeresett helyen kapsz egy levásárolható pontot és esélyt, hogy értékes tárgyat találj! <br>Jó szerencsét!',
 
     ['geo_stop'] = '- E - Egyelőre végeztem',
     ['geo_start'] = '- E - Indulok túrázni',
