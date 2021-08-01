@@ -22,9 +22,10 @@ Funkciók:
 -	standard(6) és event(1) útvonalak
 -	Beépített geobolt (NPC vel, vagy paranccsal) configban állítható
 -	Túra felvétel start/stop (NPC vel, vagy paranccsal) configban állítható
--	
-Működés:
--	lásd a videót (hamarosan)
+
+
+Videó:
+https://youtu.be/T-mO89Ci0YY
 
 
 [Képek](https://github.com/Ekhion76/eco_caching/tree/main/eco_caching/preview_images)
