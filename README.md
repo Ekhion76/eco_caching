@@ -19,9 +19,12 @@ STATISZTIKA: Igen, minden felkeresett hely és talált láda számon van tartva,
 GEOBOLT: Mit kezdj az összegyűjtött pontokkal? A geo boltban beválthatod pontjaid és event érméidet.
 
 Funkciók:
--	standard(6) és event(1) útvonalak
+-	Standard(6) és event(1) útvonalak (admin felülettel /geoadmin)
 -	Beépített geobolt (NPC vel, vagy paranccsal) configban állítható
 -	Túra felvétel start/stop (NPC vel, vagy paranccsal) configban állítható
+-	Ládák megjelenítése proppal, markerrel (kapcsolható egyik, vagy mindkettő)
+-	Dropook konfigurálhatók 0-6 szintű tárgyakra és vagy pénzre
+-	Véletlenszerű animációk interakcióknál
 
 
 Videó:
