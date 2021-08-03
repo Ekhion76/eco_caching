@@ -26,6 +26,7 @@ Funkciók:
 -	Dropook konfigurálhatók 0-6 szintű tárgyakra és vagy pénzre
 -	Véletlenszerű animációk interakcióknál
 
+A szkriptbe építve megtalálható a mythic_notify így azt külön telepíteni nem kell.
 
 Videó:
 https://youtu.be/T-mO89Ci0YY
