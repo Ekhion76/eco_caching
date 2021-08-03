@@ -33,6 +33,8 @@ A szkriptbe építve megtalálható a mythic_notify így azt külön telepíteni
 Videó:
 https://youtu.be/T-mO89Ci0YY
 
+[![Watch the video](https://img.youtube.com/vi/T-mO89Ci0YY/sddefault.jpg)](https://youtu.be/T-mO89Ci0YY)
+
 
 [Képek](https://github.com/Ekhion76/eco_caching/tree/main/eco_caching/preview_images)
 
