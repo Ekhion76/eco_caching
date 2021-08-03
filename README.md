@@ -1,9 +1,7 @@
 # eco_caching
 Fivem ESX geo caching, kincskereső, túra
 
-Tutya elérhetősége (fejlesztő):
-
-Discord: HipnotikusAvasSzalonna#3252
+:pencil2: Tutya Discord elérhetősége (fejlesztő): HipnotikusAvasSzalonna#3252
 
 ECO CACHING
 Mi is ez a szkript? Nem igazán kincskereső és nem igazán geo caching ez a kettő kombinálása.
